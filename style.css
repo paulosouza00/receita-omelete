@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "titulo";
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+@font-face {
+    font-family: 'texto';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+body {
+    background-color: #f3e5d8;
+}
+span {
+    color: rgba(0, 0, 0, 0.693);
+}
+img {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+main {
+    color: rgb(146, 134, 134);
+    font-family: 'texto';
+    font-weight: bold;
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+article h1 {
+    font-family: 'titulo';
+    color: black;
+    font-weight: 400px;
+    font-size: 2.3em;
+}
+h2#cor {
+    color:#834c64 ;
+    font-weight: bolder;
+    font-size:1.2em ;
+}
+section#secao1 {
+    margin-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+ul li::marker {
+    color: #8B4513;
+}
+    
+ol {
+    counter-reset: item;
+}
+ol li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+ol li::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+    color:  #8B4513;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.fonte {
+    font-family: 'titulo';
+    color:  #8B4513;
+}
+table {
+    width: 99%;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}
+tr {
+    border-bottom: 1px solid #ccc;
+}
+.valor {
+    color:  #8B4513;
+    font-weight: bold;
+}
+#ultimalinha {
+    border-bottom: none;
+}
